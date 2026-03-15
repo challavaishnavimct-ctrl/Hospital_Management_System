@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doctor Registration</title>
+</head>
+
+<body>
+
+<h2>Doctor Registration Form</h2>
+
+<form action="DoctorServlet" method="post">
+
+Doctor ID:
+<input type="text" name="doctor_id" required>
+<br><br>
+
+Doctor Name:
+<input type="text" name="doctor_name" required>
+<br><br>
+
+Department:
+<select name="department">
+<option value="Cardiology">Cardiology</option>
+<option value="Neurology">Neurology</option>
+<option value="Orthopedics">Orthopedics</option>
+<option value="Dermatology">Dermatology</option>
+<option value="General Medicine">General Medicine</option>
+</select>
+<br><br>
+
+Specialization:
+<input type="text" name="specialization" required>
+<br><br>
+
+Available Time:
+<input type="time" name="available_time" required>
+
+<select name="ampm">
+<option value="AM">AM</option>
+<option value="PM">PM</option>
+</select>
+<br><br>
+
+<input type="submit" value="Add Doctor">
+
+</form>
+
+</body>
+</html>
